@@ -1,0 +1,63 @@
+/* ul#navegacao-horizontal  {
+
+
+    border: 1px solid blueviolet;
+    width: 720px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    background: url('./img/fundo-horizontal.png') repeat-x top left;
+}
+
+ul#navegacao-horizontal  li {
+    background: url('./img/divisor.png') no-repeat;
+    padding: 0 2em;
+    line-height: 40px;
+    float: left;
+}
+
+ul#navegacao-horizontal  li  a {
+    text-decoration: none;
+}
+
+ul#navegacao-horizontal .comeco-horizontal {
+    background: none;
+} */
+
+/* Navegacao com Abas */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ul#navegacao-abas {
+    width: 720px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+ul#navegacao-abas  li{
+    float: left;
+    background: url('./imagens/aba-direita.png') no-repeat top right;  
+}
+
+ul#navegacao-abas li a{
+    background: url('./imagens/aba-esquerda.png') no-repeat top left;
+    padding: 0 2em;
+    line-height: 3em;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+ul#navegacao-abas > li > a:hover {
+    color: #894a1f;
+}
+ul#navegacao-abas #atual {
+    background: url('./imagens/aba-direita-atual.png') no-repeat top right;
+}
+
+ul#navegacao-abas #atual a{
+    background: url('./imagens/aba-esquerda-atual.png') no-repeat top left;
+}

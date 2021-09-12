@@ -1,0 +1,49 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+body, html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.fundo {
+    background-image: url(./imagens/imagem2.jpg);
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    opacity: 0.7;
+    background-attachment: fixed;
+}
+.fundo2 {
+    background-image: url(./imagens/imagem3.jpg);
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    opacity: 0.7;
+    background-attachment: fixed;
+}
+section > .bem-vindo {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+section > .bem-vindo h1 {
+    padding: 18px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.368);
+    color: white;
+}
+article {
+    background-color: teal;
+    padding: 300px 0;
+    text-align: center;
+   
+    
+}

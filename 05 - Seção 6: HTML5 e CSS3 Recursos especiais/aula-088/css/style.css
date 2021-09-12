@@ -1,0 +1,46 @@
+/* ****************
+animações
+ */
+ *{
+     margin: 0;
+     padding: 0;
+ }
+ @keyframes animacao-article{
+    from {      /* from -> Estado Inicial */
+       background-color: rgb(58, 233, 233);
+       border-radius: 0px;
+       top: 0;
+       left: 0;
+    }
+    to {    /* to -> Estado Final */
+        background-color: teal;
+       border-radius: 20px 50px;
+       top: 0px;
+       left: 200px;
+    } 
+ }
+
+article {
+    background-color: white;
+    padding: 80px 100px;
+    text-align: center;
+
+}
+.bk-01{
+    background: royalblue;
+    height: 100px;
+    width: 100px;
+    position: relative;
+  /*   animation-name: animacao-article;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+ */
+    /* shorthands */
+    animation: animacao-article 5s 3s 2 alternate;
+}
+section {
+    
+}
+ 

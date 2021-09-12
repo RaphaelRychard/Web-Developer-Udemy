@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Flexible Box Leyout</title>
+    <style>
+          article {
+                background-color: gainsboro;
+                height: 700px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+            /* 
+
+                row | row-reverse | column | column-reverse
+                Conseguimos definir o lado dos blocos do leyout
+                                  flex-direction: row;
+
+                nowrap | wrap wrap-reverse 
+                conseguimos definir querbras de leout
+                                   flex-wrap: nowrap;
+
+                flex-start(left) | flex-end(right) | center(center) | space-between(adiciona um epaçamento proporcional - ) | space-around 
+                                 justify-content:  space-between;
+
+                stretch | center | flex-start| flex-end | flex-baseline
+                                 align-items: baseline;
+ */
+
+        }
+
+        .item {
+            height: 100px;
+           /*  width: 200px; */
+            margin: 10px;
+            background: white;
+            border: 1px solid royalblue;
+            /* DEFINE PROPORÇÃO DO ESPAÇO OCUPDO POR UM ITEM */
+            flex-grow: 1;
+
+            /* Define a capacidade de redução de tamanho do item. */
+            flex-shrink: 1;
+
+            /* Indica o tamnho inicial do flex item antes da distrinição do espaço restante */
+            flex-basis: 100px;
+        }
+/*  ***************** ordena deacordo com o valor no [ ORDER ] declarado */
+ /*        .ordem1 {
+            order: 1;
+        }
+
+        .ordem2 {
+            order: 2;
+        }
+
+        .ordem3 {
+            order: 3;
+        }
+
+        .ordem4 {
+            order: 4;
+        }
+        .ordem {
+            order: -2;
+        } */
+ 
+        .item1 { 
+          /*   flex-grow: 1;
+            flex-shrink: 1; */
+        }
+        .item2 {
+           /*  flex-grow: 1;
+            flex-shrink: 2; */
+            flex-grow: 3;
+        }
+        .item3 {
+             flex-grow: 4;
+          /*   flex-shrink: 5;  */
+        }
+    </style>
+</head>
+ 
+<body>
+    <h1>Flexbox</h1>
+
+    <article>
+
+        <section class="item item1" >01</section>
+        <section class="item item2">02</section>
+        <section class="item item3">03</section>
+        <section class="item">04</section>
+
+    </article>
+</body>
+
+</html>

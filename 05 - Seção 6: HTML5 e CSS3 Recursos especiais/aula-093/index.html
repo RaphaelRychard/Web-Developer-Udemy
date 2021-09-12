@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Novas tags de Input</title>
+        <!-- Normalise CSS -->
+        <link rel="stylesheet" href="./css/normaliza.css">
+
+        <!-- Estilo customizado -->
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+
+    <body>
+        <article>
+            <form action="">
+                <!-- Novos inputs e atributos HTML 5 -->
+                <label for="nome">Nome:</label>
+                <input type="text" name="text" id="text" required autofocus>
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+
+                <!-- NUMERO -->
+                <label for="numero">Numero: </label>
+                <input type="number" name="numero" id="numero" required   min="1" max="20" step="5" >
+
+                 <!-- URl -->
+                 <label for="URl">URL: </label>
+                 <input type="url" name="URl" id="URl" placeholder="Ex: https://www..." >
+                
+                 <!-- pesquisa -->
+                 <label for="pesquisa">Pesquisa: </label>
+                 <input type="search" name="pesquisa" id="pesquisa" placeholder="Ex: https://www..." >
+
+                <!-- range -->
+                <label for="range">Range: </label>
+                <input type="range" name="range" id="range" min="1" max="20" value="10">
+
+                <!-- Data -->
+                <label for="data">data: </label>
+                <input type="date" name="data" id="data" min="1" max="20" value="10">
+
+                <!-- Cor -->
+                <label for="Cor">data: </label>
+                <input type="color" name="Cor" id="Cor">
+
+                <input class="submit" type="submit" value="Enviar">
+            </form>
+        </article>
+    </body>
+
+</html>

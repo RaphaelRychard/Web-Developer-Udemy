@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* 
+    font-family: 'Raleway', sans-serif;
+ */
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/* body {
+    font-family: 'Raleway', sans-serif;
+    background: #643d87 url('../img/fundo.jpg') no-repeat top center;
+} */
+ /* 
+    Leyout
+ */
+/* main {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+}
+
+main img {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+input {
+    height: 40px;
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 40px;
+    border: none;
+    background-repeat: no-repeat;
+}
+input.email {
+    background-image: url('../img/icone-usuario.png');
+    background-position: 10px;
+}
+input.senha {
+    background-image: url('../img/icone-cadeado.png');
+    background-position: 10px;
+}
+input.submit {
+    color: #fff;
+    background-color: #f79300;
+    border: 2px solid #db7d00;
+    padding: 5px 20px;
+    height: 45px;
+    width: 90%;
+
+    background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+    background: linear-gradient(to bottom, #faa600, #f68a00);
+} */
+
+.caixa {
+    width: 400px;
+    background: #dedede url('../fotos/fundo-arredondamento.png') repeat-y left top;
+   
+}
+
+.caixa h2 {
+    padding: 10px 20px 0 20px;
+    background: url('../fotos/topo2.png') no-repeat left top;
+}
+.caixa p {
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+.caixa .ultimo {
+    background: url('../fotos/baixo2.png') no-repeat left bottom;
+   width: 400px;
+   height: 24px;
+}
+
+/* .caixa h2 {
+    padding: 10px 20px 0 20px;
+}
+.caixa p {
+    background: url('../fotos/baixo2.png') no-repeat left bottom;
+    padding: 0px 20px 20px 20px;
+} */

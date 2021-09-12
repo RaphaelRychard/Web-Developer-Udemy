@@ -1,0 +1,36 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+fieldset {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+} 
+legend {
+    font-weight: bold;
+}
+label {
+    display: block;
+    cursor: pointer;
+}
+input/* [type="text"], [type="url"], [type="email"]  */{
+    width: 20em;
+}
+/* input#sim, input#nao {
+    width: 20px;
+} */
+input.radio, input.checkbox, input.submit {
+    width: auto;
+}
+textarea {
+    width: 20em;
+    height: 10em;
+    min-width: 20em;
+    min-height: 5em;
+    max-width: 0em;
+    max-height: 30em;
+}
+.radio {
+   margin-right: 1em;
+}

@@ -1,0 +1,43 @@
+header {
+    border: 1px solid teal;
+    background-color: teal;
+    padding: 20px 30px;
+    margin: 10px;
+}
+nav {
+    border: 1px solid teal;
+    background-color: teal;
+    padding: 20px 30px;
+    margin: 10px;
+}
+main {
+    border: 1px solid teal;
+    background-color: teal;
+    padding: 20px 30px;
+    margin: 10px;
+}
+section {
+    background: lemonchiffon;
+}
+article {
+    background-color: lightcoral;
+    padding: 10px;
+    box-sizing: border-box;
+}
+aside {
+    background-color: tomato;
+    margin: 10px;
+}
+footer {
+    border: 1px solid teal;
+    background-color: teal;
+    padding: 20px 30px;
+    margin: 10px;
+}
+label, input {
+    display: block;
+    margin-bottom: 5px;
+}
+.submit {
+    margin-top: 10px;
+}

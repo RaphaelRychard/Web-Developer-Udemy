@@ -1,0 +1,25 @@
+
+
+
+
+
+article {/* COM PEDDING */
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: teal;
+    box-shadow: 1px 1px 8px #00000044;
+}
+article > h1 {
+    font-size: 1.5em;
+    background: #6e6e6e50;
+    text-align: center;
+    color: white;
+    border-radius: 2px 10px;
+    box-shadow: 1px 1px 3px #0000003b;
+    text-shadow: 1px 3px 5px #0000004e;
+}
+article > p {
+    color: rgb(0, 0, 0);
+}

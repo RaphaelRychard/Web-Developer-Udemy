@@ -1,0 +1,28 @@
+/* ****************
+animações
+ */
+ *{
+     margin: 0;
+     padding: 0;
+ }
+
+
+article {
+    background-color: white;
+    background: teal;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+article h1 {
+    background-color: rgba(0, 0, 0, 0.231);
+    color: white;
+    border-radius: 5px 10px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.368);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.368);
+}
+
+
+ 

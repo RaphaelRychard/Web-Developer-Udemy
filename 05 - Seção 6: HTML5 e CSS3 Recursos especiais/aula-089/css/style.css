@@ -1,0 +1,34 @@
+/* ****************
+animações
+ */
+ *{
+     margin: 0;
+     padding: 0;
+ }
+ @keyframes animacao-article{
+    from {      /* from -> Estado Inicial */
+       background-color: rgb(58, 233, 233);
+       border-radius: 0px;
+       top: 0; 
+       left: 0;
+    }
+    to {    /* to -> Estado Final */
+        background-color: teal;
+       border-radius: 20px 50px;
+       top: 0px;
+       left: 200px;
+    } 
+ }
+
+.bk-01{
+    background: teal;
+    height: 300px;
+    width: 300px;
+}
+.bk-01:hover {
+    width: 400px;
+    background-color: royalblue;
+    /* transition: width 3s, background 3s; */
+    transition: all 3s;
+    color: bisque;
+}

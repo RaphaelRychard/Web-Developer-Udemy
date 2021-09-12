@@ -1,0 +1,93 @@
+
+/*
+    ***Seleor Universal***
+
+* {
+    border: 1px solid red;
+}
+
+
+    ***Seletor de texto***
+
+
+h1 {
+    color: royalblue;
+}
+
+
+    ***Seletor de Class***
+ */
+
+/* span.verde {
+    background-color: green;
+} */
+ 
+/* 
+    ***Seletor de ID***
+ */
+
+/*  #cabecalho {
+     border: 1px solid blue;
+ } */
+
+
+  
+/* 
+    ***Seletor de FILHO***
+ */
+/* 
+ ul > li {
+    list-style-type: none;
+ }
+ ul > li > a {
+    text-decoration: none;
+    color: royalblue;
+    
+ } */
+ 
+  
+/* 
+    ***Seletor de Decendente***
+ */
+
+/*  article a {
+     color: green;
+ } */
+
+ /*  ********************************
+    Seletor de imão adjacente
+  */
+/*   h1~p {
+      color: red;
+  }
+  ul~li{
+      color: red;
+  }
+ */
+
+
+ /*  *************************************  
+  Herança e especificidade*/
+
+#pagina p {
+    color: #4169e1 ;
+}
+
+#pagina p {
+    color: rgb(115, 115, 115);
+}
+
+
+/* Se um seletor for mais específico que outro, a aregra mais específica será aplicada
+(Tera rpecedência sobre regras gerais) */
+
+h2 {/*3 */
+    color: rgb(194, 77, 14);
+}
+ h2.verde {/*2 */
+    color: rgb(96, 179, 12);
+ }
+
+ h2#amarelo {/*1 */
+     color: rgb(7, 48, 162);
+ }

@@ -1,0 +1,122 @@
+@charset  "UTF-8";
+
+:root {
+    --cor-Menu: #B2002C;
+    --cor-Menu-Destaque: #DE003E;
+}
+
+
+/* Global
+----------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+   height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: white url(../img/fundo.png) repeat-x fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#Home #menu .atual,
+#Brasil #menu .atual,
+#Internacional #menu .atual,
+#Economia #menu .atual,
+#Saude #menu .atual,
+#Ciencia #menu .atual,
+#Fotos #menu .atual {
+    background-color: var(--cor-Menu-Destaque);
+}
+
+/* Ajuste
+----------------------------------------- */
+ul {
+    list-style: none;
+}
+
+#conteiner {
+    width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    box-sizing: border-box;
+}
+
+header #menu nav #baknone {
+    background: none;
+}
+
+#detalhe {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 0;
+}
+
+
+
+/* HEADER
+------------------------------------------------------------------ */
+header {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+
+/* MENU NAV
+---------------------------------------------------- */
+header #menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    flex: 1;
+}
+
+header #menu nav{
+    width: 630px;
+    margin-top: 40px;
+    z-index: 1;
+}
+
+header #menu nav ul {
+    display: flex; 
+}
+
+header #menu nav ul li {  
+    line-height: 45px;
+    background-color: var(--cor-Menu);
+}
+
+
+header #menu nav ul a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0 18px;
+    background: url('../img/divisor.png') no-repeat left;
+}
+
+#detalhe img {
+    width: 100%;
+}
+
+/* MAIN
+----------------------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    background-color: teal;
+    flex: 1;
+}
+

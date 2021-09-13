@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+    padding: 10px;
+}
+#Principio {
+    margin: 0px;
+}
+
+header {
+    padding-top: 10px;
+    columns: 2;
+    margin-top: 20px;
+}
+
+header nav {
+    text-align: right;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #5b5c5f;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.131);
+}
+
+main {
+    margin-top: 22px;
+}
+main > article ol {
+    list-style-position: inside;
+    margin: 10px 0 20px 20px;
+    line-height: 1.5em;
+}
+
+main > article picture img {
+    width: 100%;
+}
+main > article h1 {
+    padding: 20px 0;
+}
+main table {
+    padding-top: 200px;
+    margin: auto;
+}
+
+main > article p {
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+main  textarea {
+    max-height: 100px;
+    max-width: 350px;
+}
+

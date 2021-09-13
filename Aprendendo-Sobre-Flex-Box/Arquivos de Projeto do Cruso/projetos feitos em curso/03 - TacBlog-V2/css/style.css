@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* 
+    *** FORMATAÇÕES BLOBAIS ***
+*/
+
+:root {
+    /* 
+        *** Cores ***
+     */
+
+    --cor01: #ffffff;
+    --cor02: #e6e6ee;
+    --cor03: #DEDADE;
+    --cor04: #4E484B;
+    --cor05: #F7b600;
+    --cor-link: #e4a700;
+    --cor-borda-clara: #f4f4f4;
+    /* 
+        *** Fontes ***
+     */
+    --fonte-Padrao: 'Open Sans',  Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cor02);
+    font-family: var(--fonte-Padrao);  
+    font-size: 1em;
+}
+
+.clear {
+    clear: both;
+}
+
+.leia-mais {
+    color: var(--cor-link);
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #00000018;
+}
+.leia-mais:hover {
+    text-decoration: underline;
+}
+
+.data-postagem {
+    font-size: 0.8em;
+    border-bottom: 1px solid var(--cor-borda-clara);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+p {
+    line-height: 1.5em;
+   
+}
+
+/* 
+    *** HEADER ***
+*/
+
+header {
+    background-color: var(--cor05);
+    text-align: center;
+    padding: 30px 0;
+}
+
+header > h1 {
+    color: var(--cor04);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.199);
+    font-size: 2.8em;
+}
+
+header > h1 > strong {
+    color: var(--cor01);
+}
+
+/* 
+    *** NAV  ***
+*/
+
+nav {
+    background-color: var(--cor05);
+    height: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+    box-shadow: 0px 5px 6px 0px #00000027;
+}
+
+nav > a {
+    padding: 5px 10px;  
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px #00000046;
+}
+
+nav a:link, nav a:visited {
+    color: var(--cor01);
+}
+
+nav > a:hover{
+    color: var(--cor05);
+    background-color: var(--cor-borda-clara);
+    transition: .3s;
+    border-radius: 2px;
+    text-shadow: none;
+}
+
+nav > a:active {
+    color: var(--cor-link);
+    background-color: var(--cor04);
+    transition: .3s;
+}
+
+/* 
+    *** MAIN *** 
+*/
+
+main {
+    max-width: 920px;
+    margin: auto; 
+    
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--cor05);
+}
+h2 {
+    color: var(--cor05);
+    font-size: 1.6em;
+}
+
+/* 
+    *** AREA DE PSOTAGENS ***
+*/
+#area-postagens {
+    width: 660px;
+    float: left;
+}
+
+#area-postagens > section {
+    background-color: var(--cor01);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#area-postagens > section > p {
+    margin: 10px 0;
+}
+
+#area-postagens > section img {
+    width: 100%;
+}
+
+
+/* 
+    *** AREA DE LATERAL ***
+*/
+#area-lateral {
+    width: 240px;
+    float: right;
+}
+
+#area-lateral > section {
+    background-color: var(--cor01);
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#area-lateral > section > h3 {
+    font-size: 1em;
+    background: var(--cor02);
+    padding: 10px 5px;
+    color: var(--cor04);
+}
+
+#area-lateral > section > p {
+    font-size: 0.9em;
+}
+.barra {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid var(--cor02);
+}
+
+#area-lateral > section > ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+#area-lateral > section > ul > li {
+    font-size: 1.1em;
+    
+}
+
+#area-lateral > section a {
+    font-size: 0.9em;
+}
+
+/*
+    *** FOTER ***
+*/
+footer {
+    width: 920px;
+    background-color: var(--cor03);
+    margin: auto;
+}
+
+footer h4 {
+    padding: 15px;  
+    text-align: center;
+}

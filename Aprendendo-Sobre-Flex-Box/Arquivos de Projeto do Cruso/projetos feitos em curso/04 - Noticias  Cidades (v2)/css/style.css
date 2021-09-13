@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+/* -----------------------------------*/
+/* ---------->>> GLOBAL <<<-----------*/
+/* -----------------------------------*/
+
+:root {
+    --cor0: #F2F2F2;
+    --cor1: #35333B;
+    --cor2: #2C5273;
+    --cor3: #B20030;
+    --cor4: #E10039;
+    --cor-links: #75001f;
+    --corEntrevistados: #646464;
+    --font: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font);
+    font-size: 1em; 
+}
+
+/* ----------------------------------------- */
+/* ---------->>> PÁGINA ATUAL <<<----------- */
+/* ----------------------------------------- */
+#menu #atual {
+    background-color: var(--cor4);
+}
+
+/* -------------------------------------------- */
+/* ---------->>> Estilos Globais <<<----------- */
+/* -------------------------------------------- */
+.Container {
+    width: 860px;
+    margin: auto;  
+    background: transparent;
+}
+.Clear {
+    clear: both;
+}
+
+#detalhe {
+    float: right;
+}
+#logo {
+    margin-top: 20px;
+}
+
+header {
+    height: 260px;
+    background: #294c71 url('../img/fundo.png') repeat-x bottom left;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------------- */
+/* ---------->>> Menu de Navegação <<<----------- */
+/* ---------------------------------------------- */
+nav {
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+}
+
+    nav #menu {
+        list-style: none;
+        float: left;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+        nav #menu li {
+            float: left;
+            background-color: var(--cor3);
+        }
+
+        nav #menu li a {
+            display: block;
+            padding: 0 1.4em;
+            line-height: 3em;
+            color: var(--cor0);
+            text-decoration: none;
+            text-shadow: 1px 1px 2px #0000002a;
+            background: url('../img/divisor.png') no-repeat left;
+        }
+
+        nav #menu li a:hover {
+            background-color: var(--cor4);
+            color: var(--cor-links);
+            transition: .5s;
+        }
+    /* 
+        *** Reset *** 
+    */
+    #menu .comeco {
+        background: none;
+    }
+
+/* --------------------------------- */
+/* ---------->>> MAIN <<<----------- */
+/* --------------------------------- */
+main h2 {
+    background-color: var(--cor2);
+    color: var(--cor0);
+    padding: 6px 5px;
+    font-size: 1.2em;
+}
+
+    main h2, main h3, main a {
+        text-shadow: 1px 1px 2px #0000001e;
+    }
+
+    main p {
+        padding: 10px 0;
+    }
+
+
+
+/* ------------------------------------------- */
+/* ---------->>> COLUNA DIREITA <<<----------- */
+/* ------------------------------------------- */
+main .coluna-direita {
+    width: 620px;
+    float: right;
+    columns: 2;
+    border: 1px solid red;
+}
+main .coluna-direita img {
+    margin-top: 10px;
+    width: 95%;
+    border: 2px solid #35333b41;
+}
+
+.coluna-direita section{
+    background: url('../img/fundo-caixa.png');
+    padding: 5px 10px 10px 10px;
+    margin-bottom: 20px;
+}
+ .coluna-direita-interna div {
+    background: var(--cor0);
+    margin: 10px 0;
+    padding: 10px;
+}
+    .coluna-direita-interna div h3 {
+        background-color: var(--cor3);
+        color: var(--cor0);
+        font-size: 1em;
+        padding: 2px 5px;
+        display: inline-block;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px #00000023;
+    }
+        h3#preto{
+            color: #000;
+        }
+    .coluna-direita-interna div a {
+        color: var(--cor3);
+    }
+
+
+
+/* -------------------------------------------- */
+/* ---------->>> COLUNA ESQUERDA <<<----------- */
+/* -------------------------------------------- */
+
+.coluna-esquerda {
+    width: 220px;
+}
+.coluna-esquerda section {
+    background: url('../img/fundo-caixa.png');
+    padding: 5px 10px 20px 10px;
+    margin-bottom: 30px
+}
+.coluna-esquerda section ul {
+    background-color: var(--cor0);  
+}
+    .coluna-esquerda ul {
+        list-style: none;
+        padding: 10px;
+    }
+    .coluna-esquerda li {
+        line-height: 3em;
+    }
+    .coluna-esquerda li a {
+        text-decoration: none;
+        color: var(--cor1);
+        font-weight: 500;
+    }
+    .coluna-esquerda li a:hover {
+        background: url('../img/marcador.png') no-repeat left center;
+        padding: 25px;
+        color: var(--corEntrevistados);
+    }
+
+
+/* 
+    *** FORMULARIO ***
+*/
+.coluna-esquerda form {
+    background-color: var(--cor0);  
+    padding: 10px;
+}
+    .coluna-esquerda label {
+        display: block;
+        font-size: 1.2em;
+        margin-top: 5px;
+    }
+    .coluna-esquerda .email {
+        height: 35px;
+        width: 85%;
+        border: 2px solid #2caabb85;
+        font-size: 1.1em;
+        margin-top: 3px;
+    }
+
+
+    /* E-MAIL */
+    .coluna-esquerda .email:hover{
+        border: 2px solid #2caabb85;
+    }
+
+    /* CADASTRO */
+    .coluna-esquerda .cadastro {
+        height: 35px;
+        width: 55%;
+        font-size: 1em;
+        background-color: var(--cor3);
+        color: var(--cor0);
+        border: 2px solid #75001f;
+        margin-top: 5px;
+        font-weight: 600;
+    }

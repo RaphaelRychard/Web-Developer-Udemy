@@ -1,0 +1,216 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap');
+
+:root {
+    --cor-0: #F7F4F3;
+    --cor-1: #292F36;
+    --cor-2: #797A9E;
+    --cor-3: #57A773;
+    --cor-4: #26C485;
+
+    --corT1: #637182;
+    --corT2: #24384F;
+    --corT3: #292F36;
+    --corT4: #3C5D82;
+    --corT5: #9db4cf6e;
+
+    --font:  'Lato', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif, Arial;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    height: 100%;
+    background-color: white;
+    font-family: var(--font);
+    font-size: 1em;
+    min-width: 320px;
+}
+
+.paralax {
+    background:  url(../img/fundo3.jpg) fixed;
+    height: 100%;
+    background-size: cover;
+}
+
+.paralax > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.paralax div > section.item {
+    width: 800px;
+    text-align: center;
+}
+.paralax div > section.item h1 {
+    color: white;
+    font-size: 2.5em;
+}
+.paralax div > section.item p {
+    color: rgb(255, 255, 255);
+    font-size: 1.8em;
+}
+
+
+.conteudo h1 {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+
+/* header 
+*/
+header {
+    background-color: #292F36;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+header section {
+    margin-left: 10px;
+}
+
+header section img {
+   
+}
+
+header nav {}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li {
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+header nav ul li abbr {
+    text-decoration: none;
+}
+
+header nav ul li abbr a {
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN  
+*/
+
+main > section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 60px 80px;
+}
+
+main  #info .itens {
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 360px;
+}
+
+main section#info .itens h2 {
+    font-size: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+main section#info .itens > p {
+    font-weight: 300;
+    line-height: 1.5em;
+    
+}
+
+main section#info .itens  img  {
+    width: 30%;
+}
+
+/* PLanos Inicio
+
+*/
+main section#planos {
+    background-color: var(--cor-0); 
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Titulo do Planos 
+
+*/
+main .titulo h2{
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0;
+}
+
+main .titulo  p {
+    font-weight: 300;
+}
+
+/* Planos Adicionais
+
+
+*/
+main section#planos > .itens{
+    width: 260px;
+    background-color: var(--corT5);
+    margin: 5px;
+    padding: 0;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+main #planos > .itens section.preco {
+    background-color: var(--cor-4);
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    position: absolute;
+    top: -50px;
+    right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section#planos h2 {
+    background-color: var(--corT2);
+    padding: 20px;
+    padding-top: 55px;
+    text-align: center;
+    color: var(--cor-0);
+}
+main section#planos ul{
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    line-height: 3em;
+}
+footer {
+    background-color: var(--cor-1);
+    padding: 80px;
+}

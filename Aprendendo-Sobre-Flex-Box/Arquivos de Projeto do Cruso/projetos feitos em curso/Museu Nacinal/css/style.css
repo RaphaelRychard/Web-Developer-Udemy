@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #ebe7dd;
+    --cor1: #CDC7B3;
+    --cor2: #9D9175;
+    --cor3: #af670a;
+    --cor4: #86521a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* GLOBAL 
+------------------------------------------------------ */
+body {
+    background: #F5F2EF url(../img/fundo.png) repeat-x ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+}
+
+a {
+    text-transform: uppercase;
+}
+
+a:link, a:active, a:visited {
+    color: #af670a;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #227115;
+}
+
+
+/* reset 
+------------------------------------------------------ */
+h1{
+    margin: 0;
+    font-size: 2em;
+}
+
+ ul {
+     list-style: inside ;
+ }
+
+/* Container
+------------------------------------------------------ */
+#container  {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* HEADER
+------------------------------------------------------ */
+header#container > header {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* LOGO */
+header#container > header #logo{
+    text-indent: -1000px;
+    background: url(../img/logo.png) no-repeat;
+    width: 248px;
+    cursor: pointer;
+}
+
+
+header#container >  header nav ul {
+    list-style: none;
+    float: right;
+}
+
+header#container > header nav ul li {
+    float: left;
+    text-transform: uppercase;
+    padding: 0px 15px;
+}
+
+header#container > header nav ul li a {
+    display: block;
+    text-transform: uppercase;
+    
+}
+
+header#container > header nav ul li a:hover {
+    color: teal;
+    transition: all .5s;
+    border-bottom: 1px solid grey;
+}
+
+/* Princiapl
+------------------------------------------------------ */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#conteudo {
+    width: 710px;
+}
+/* leteral */
+aside {
+    width:  350px;
+    background-color: var(--cor0);
+    padding-bottom: 30px;
+}
+/* galerias de fotos */
+#galeria {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#galeria a {
+    display: block;
+    background: url(../img/fundo-foto.png) no-repeat;
+    float: left;
+    padding: 17px 15px 17px 15px;
+    margin: 10px 0 0 20px;
+}
+#galeria a img {
+    margin-left: 2px;
+    margin-top: 2px;
+}
+/* formatação do titulos */
+h4 {
+    color: var(--cor4);
+    font-size: 1.3em;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+/* Formularios
+------------------------------------------------------ */
+section#visita {
+    background-color: var(--cor1);
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+input {
+    height: 20px;
+    width: 80px;
+    background-color: white;
+    font-size: 1em;
+    border: none;
+}
+
+.campo {
+    border:  1px solid var(--cor0);
+}
+
+.botao{
+    width: 100%;
+    height: 40px;
+    background-color: #9b9271;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    display: none;
+}
+
+
+
+/* Noticias Adicicionais
+------------------------------------------------------ */
+#postagens, #posgens-add  {
+    display: flex;
+    justify-content: space-around;
+}
+
+#postagens h3, #posgens-add h3 {
+    color: teal;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+#posgens-add article{
+    width: 310px;
+    margin-top: 10px;
+}
+
+#posgens-add article ul {
+    line-height: 1.8em;
+    list-style-type: square;
+}
+
+#posgens-add ul ,#posgens-add blockquote {
+    padding-top: 14px;
+    padding-bottom: 15px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+/* Rodape 
+------------------------------------------------------ */
+footer#container {
+     margin-bottom: 40px;
+}
+footer nav {
+    margin: 30px 0;
+    background: url(../img/fundo-rodape.png) no-repeat center top ;
+    padding-top: 30px;
+}
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+footer nav ul li {
+    padding: 0 20px;
+    font-size: 0.9em;
+    
+}
+footer p {
+    text-align: center;
+}
+footer strong {
+    font-weight: 600;
+    color: #af670a;
+}
+

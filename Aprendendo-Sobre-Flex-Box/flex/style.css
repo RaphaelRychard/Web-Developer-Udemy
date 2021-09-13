@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body {
+   
+}
+/* 
+    -  Autoprefixed (other broser) -> https://goo.ol/OuvSmh
+    - Flexbox Playground -> (flex-box  contructor) - https://goo.gl/C8DwCa
+    - Polyfill (Flex-box) - https://goo.gl/bkowQP
+  */
+
+#content {
+    background-color: #e6e6e6;
+    height: 500px;
+    display: flex;/* Quando define o display flex está dsendo que cada conteudo filho comporta como um bloco */
+
+    flex-direction: row; /* row -> linha // column */ /* os dois tem modo reverso */
+
+    flex-wrap: wrap;  /* determina se os elemntos filhos que estão dentro do nosso content ira aceitar uma quebra de conteudo*/ 
+    /* wrap-> quebra // No wrap -> não quebra // wrap-reverse -> ele vai trazer a quebra e invertendo a ordem dos meus elemntos */
+
+    justify-content: space-between; /* flex-start define que todos os meu elementos flhos vãõ começar da [ esquerda ] para a direita  */
+                                    /* Flex-end -> define todos os elementos para a [ direita ] */
+                                    /* space-around -> ela pega o elemnto filho e distribui uniformimete dentro do parametro  da nosso content
+                                                    -> Distribui uniformimente dentro do elemnto primario, 
+                                                    -> e entre as laterais ele gera meio que um divisão do elemento que ele ultilizou como base */
+                                    /* space-between -> Diferente  dela inserir os espaço iniciando das estremidades e indo para o centro
+                                                -> Ela começa do centro indo para estremidas, e ela não coloca nenhum expaçamento as laterais*/
+
+    align-items: flex-start;  /* ela ajuda a definir o alinhamento vertical dos nosso itens */
+                            /* flex-start -> ele vai comçar do topo da esquerda para baixo // flex-end -> vai começar de baixo para cima */
+                            /* center -> ele vai centralizar todos os noso filhos */
+                            /* strech -> ele vai ir do topo até a base dos nosso itens alonfando toda a altura dos nossos elementos filhos
+                                    -> independente do tanto de contudo que tiiver ele vai tentar prevalecer com a mesma altura para todos os itens que temos no nosso contente*/
+                            /* baseline ->  ela uma escala sensivel ao conteudo, é um alinhamento sensivel ao conteudo 
+                                        -> ele vai pegar cada elemento filho, que agente tem e vai adaptar o alinhamento dele ao conteudo do elemtento*/
+
+
+    /* align-content: flex-start; */ /* basicamente  aline- items,  só que quando temos uma quebra, ous eja agente tem um wrap e não um nowrap,
+                                    -> é o alinhamento do blovo filho paraticamente*/
+
+    /* flex-flow: column nowrap; /* que é como se fosse  shorts, podendo escrever um flex-direction e o flex-direction em uma unica line*/ 
+
+}
+
+.item {
+     /*  a propriedade flex ela  tem 3 tipos de parametros 
+     -> flex-grow // flex-shrink flex-basis ->  basicamente ela difera a sensibilidade de tamnho dos elementos filhos*/
+    flex-grow: 0; /* Ocupa o resto da largura da div */
+
+    flex-shrink: 1; /* encolhe a nossa div */
+
+    flex-basis:  auto; /* define um width de cada elemento não tenha */
+     /* SHORTRANDS */
+    flex: 0 1 auto;/* 0 -> corresponde ao flex-grow // 1 -> corresponde ao flex-shrink //  e o auto corresponde ao flex-basis */
+
+    height: 50px;
+    width: 200px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.123);
+    margin: 5px;
+}
+
+.item:nth-child(1){
+    flex-grow: 1;
+}
+
+/* .item:nth-child(1){
+    order: 4;
+}
+
+.item:nth-child(2){
+    order: 1;
+}
+
+.item:nth-child(3){
+    order: 2;
+}
+
+.item:nth-child(4){
+    order: 3;
+} */

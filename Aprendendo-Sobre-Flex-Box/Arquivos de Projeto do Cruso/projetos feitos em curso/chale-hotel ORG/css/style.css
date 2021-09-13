@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+:root {
+    --cor0: #F3EFCB;
+    --cor1: #FDF6DE;
+    --cor2: #c2ba8a;
+    --cor3: #A29750;
+    --cor4: #6E6730;
+    --font-padrao: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+#fundo {
+    background: url(../imagens/bg-container.png) top center;
+}
+
+body {
+    padding: 20px;
+    background: var(--cor0) url(../imagens/bg.png) ;
+    font-family: var(--font-padrao);
+    min-width: 720px;
+    max-width: 1185px;
+    margin: 0 auto;
+}
+
+header#container {
+    min-height: 250px;
+    width: 100%;
+    background: url(../imagens/topo-imagem-principal.png) no-repeat;
+    position: relative;
+    z-index: 0;
+}
+    #logo {
+        text-indent: -3000px;
+        background: url(../imagens/logo.png) no-repeat;
+        z-index: 1;
+        height: 151px;
+        width: 150px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+header#container #lateral {
+    background: url(../imagens/topo-imagem-lateral.png);
+    min-height: 250px;
+    width: 450px;
+    padding-left: 20px ;
+    position: absolute;
+    top: 0;
+    right: 0;     
+ 
+}
+header#container #lateral section {
+    margin-left: 80px;
+    margin-top: 15px;
+    margin-right: 15px; 
+}
+
+header#container #lateral #reserva {
+    border-top: 1px solid var(--cor3);
+    border-bottom: 1px solid var(--cor3);
+    margin:  15px 0;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+    #reserva strong {
+        font-size: 0.7em;
+        font-weight: normal;
+        color: var(--cor3);
+    
+    }
+    #reserva span{
+        float: right;
+        font-size: 0.8em;
+        line-height: 20px;
+        margin-right: 5px;
+    }
+    #reserva span a {
+        color: var(--cor1);
+        background-color: var(--cor3);
+        padding: 4px 8px;
+        text-decoration: none;
+        font-size: 0.8em;
+    }
+
+    nav#navegacao {}
+
+    nav#navegacao ul {
+        list-style: none;
+    }
+    nav#navegacao ul li{
+        font-size: 0.8em;
+        line-height: 2.2em;
+    }
+    nav#navegacao ul li a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--cor4);
+        padding: 5px;
+    }
+    nav#navegacao ul li a:hover {
+        background-color: var(--cor1);
+    }
+    #foto-depoimento {
+        position: absolute;
+        top: 70px;
+        right: 40px;
+    }
+main#container {
+    background: url(../imagens/bg-container.png) top center;
+    width: 100%;
+    
+}
+main#container article {
+    width: 50%;
+}
+main#container article section {
+    padding: 20px;
+}
+#conteudo-principal {
+    float: left;
+    background: url(../imagens/bg-area-principal.png) top left repeat-x;
+}
+    #conteudo-principal h2 {
+        font-size: 1.3em;
+        color: var(--cor3);
+        margin-bottom: 20px;
+    }
+    #conteudo-principal p {
+        font-size: 0.9em;
+        line-height: 1.5em;
+        text-indent: 30px;
+    }
+
+#conteudo-lateral {
+    float: right;
+    background: url(../imagens/bg-area-lateral.png) top left repeat-x;
+}
+#conteudo-lateral ul {
+    list-style: none;
+}
+
+#conteudo-lateral ul li{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#conteudo-lateral ul li a  {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    border-bottom: 1px solid var(--cor1);
+}
+#conteudo-lateral ul li a:hover {
+    background-color: var(--cor1);
+}
+#conteudo-lateral ul li a h3 {
+    text-transform: capitalize;
+    color: var(--cor3);
+    background: url(../imagens/ornamento.png) center right no-repeat;
+    font-size: 1em;
+    padding-top: 5px;
+    font-weight: 400;
+}
+#conteudo-lateral ul li a  p {
+    font-size: 0.8em;
+}
+#conteudo-lateral ul li a  img {
+    width: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+footer {
+    background: url(../imagens/bg-rodape.png) repeat-x top left;
+    padding: 20px 10px;
+
+}
+footer h3 {
+    color: var(--cor3);
+    font-size: 1em;
+    
+}

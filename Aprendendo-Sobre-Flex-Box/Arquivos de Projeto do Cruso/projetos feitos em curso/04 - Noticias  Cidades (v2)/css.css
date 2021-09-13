@@ -1,0 +1,41 @@
+ul#navegacao {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    max-width: 720px;
+    background: #159cb0 url('../img/fundo-horizontal.png') repeat-x;
+    float: left;
+}
+
+ul#navegacao > li {
+    float: left;
+}
+
+ul#navegacao > li a {
+    text-decoration: none;
+    padding: 0 2em;
+    display: block;
+    line-height: 2em;
+    color: #fff;
+    background: url('../img/divisor.png') repeat-y left top;
+}
+ul#navegacao > li a:hover {
+    color: #085662;
+    background-color: #44cade;
+    transition: .5s;
+}
+ul#navegacao .primeiro a {
+    background: none;
+}
+
+#home #navegacao .home a,
+#noticia #navegacao .noticia a,
+#servico #navegacao .servico a,
+#contato #navegacao .contato a,
+#sobre #navegacao .sobre a {
+     color: #44cade;
+    background-color: #085762;
+    transition: .5s;
+}
+
+ 

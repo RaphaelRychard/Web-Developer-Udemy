@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --cor0: #fff;
+    --cor1: #445A7C;
+    --cor4: #2A4870;
+    --cor2: #B2002C;
+    --cor3: #E10039;
+    --font-padrao: 'Noto Sans JP', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* pagina Atual */
+ul#menu #atual {
+    background-color: var(--cor3);
+    color: v
+}
+
+
+/* Body */
+body {
+    font-family: var(--font-padrao);
+    font-size: 1em;
+}
+
+/* HEADER */
+header {
+    background: url('../img/fundo.png') repeat-x;
+    height: 233px;
+}
+
+header#container-principal {
+    width: 920px;
+    margin: auto;
+    position: relative;
+}
+
+#logo > img{
+    padding-top: 2em;
+    float: left;
+}
+
+#detalhaes {
+    float: right;
+    margin-right: 20px;
+}
+/* MENU de Navegação */
+nav {
+    position: absolute;
+    width: 800px;
+    top: 8em;
+    left: 0;
+}
+
+nav > ul#menu {
+    float: left;
+}
+nav > ul#menu > li {
+    float: left;
+    font-weight: bold;
+    list-style-type: none;
+    background-color: var(--cor2);
+}
+
+nav > ul#menu > li > a {
+    background: url(../img/divisor.png) no-repeat left;
+    text-decoration: none;  
+    color: var(--cor0);
+    padding: 10px 26px;
+    display: block;
+}
+
+nav > ul#menu > li > a:hover {
+    color: #550015;
+    transition: .4s;
+}
+
+nav > ul#menu > li a.clearInicio {
+    background-image: none;
+}
+
+main {
+    width: 920px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+main article#contedo-esquerdo {
+    width: 220px;
+}
+
+main #contedo-esquerdo section {
+    background: url('../img/fundo-caixa.png')  ;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+main #contedo-esquerdo h2 {
+    background-color: var(--cor4);
+    color: var(--cor0);
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+main #contedo-esquerdo ul {
+    list-style-type: none;
+    list-style-position: inside;
+    background-color: white;
+    padding: 1em;
+}
+
+
+main #contedo-esquerdo ul li {
+    padding-bottom: 1em;
+}
+
+main #contedo-esquerdo ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+}
+
+main #contedo-esquerdo ul li a:hover {
+    background: url('../img/marcador.png') no-repeat left;
+    padding: 0px 20px;
+    color: #969696;
+    font-weight: bold;
+    transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+main #contedo-esquerdo section form {
+    margin-top: 10px;
+    background-color: white;
+    padding: 0.5em;
+}
+
+main #contedo-esquerdo section form label {
+    font-weight: 400;
+}
+
+main #contedo-esquerdo section form input {
+    width: 100%;
+    height: 30px;
+}
+main #contedo-esquerdo section form input.email {
+    font-size: 1em;
+    margin-top: 5px;
+    background-color:  #f1f1f1;
+    border: 1px solid #0000001f;
+}
+main #contedo-esquerdo section form input.cadastrar {
+    margin-top: 10px;
+    background-color: #B2002C;
+    color: white;
+    width: 55%;
+    height: 35px;
+    border: none;
+    font-size: 1em;
+    font-weight: bolder;
+}

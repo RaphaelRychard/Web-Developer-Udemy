@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <title>Bootstrap 4 - Alinhamento de Texto</title>
+    <style>
+      body {
+        margin: 20px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <main>
+      <h1 class="">Justificando Um Paragrafo</h1>
+      <!-- Alinhamento Justufucado -->
+      <p class="text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut dolorem dolores beatae nobis explicabo,
+        impedit repudiandae ratione quaerat molestiae ipsam perferendis ipsum inventore tenetur repellendus earum
+        obcaecati incidunt? Repellendus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus repudiandae
+        reprehenderit pariatur dolorem eaque consectetur quia inventore rerum voluptatibus, officia voluptas eveniet,
+        ipsam magni sequi saepe ullam explicabo molestias consequatur.
+      </p>
+
+      <!--
+          Alinhamento Responsivo
+          Class text-<Tela>-alinhamento 
+          Tela: sm, mf, lg, xl
+          alinhamento: left, center, right
+        -->
+
+      <p class="text-sm-center">tela &gt;= 576px</p> <!-- ! Smal -->
+      <p class="text-md-center">tela &gt;= 768px</p> <!-- * Medium -->
+      <p class="text-lg-center">tela &gt;= 992px</p> <!-- ? Large -->
+      <p class="text-xl-center">tela &gt;= 1200px</p><!-- ? Extra Large -->
+
+      <!-- elementos de Blocos Para Inline -->
+      <h1 class="bg-success d-inline">Lorem ipsum dolor</h2>
+        <p <i class="bg-success d-inline">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit
+        </p>
+
+        <br>
+        <br>
+
+        <!-- Elementos Inline Para Block -->
+        <span class="bg-success d-block"> Lorem ipsum dolor sit amet 1 .</span>
+        <span class="bg-success d-block"> Lorem ipsum dolor sit amet 2 .</span>
+
+        <!-- Elementos Inline-Block -->
+        <div class="bg-warning">
+
+          <h3 class="bg-success d-inline-block">1 &hArr; Lorem ipsum dolor</h3>
+          <h3 class="bg-success d-inline-block" style="margin-top: 50px; width: 500px;">2 &hArr; Lorem ipsum dolor</h3>
+        </div>
+    </main>
+  </body>
+
+</html>

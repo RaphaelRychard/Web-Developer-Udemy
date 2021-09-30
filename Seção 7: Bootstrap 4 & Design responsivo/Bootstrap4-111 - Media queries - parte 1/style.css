@@ -1,0 +1,76 @@
+  
+/* Small divices (landscape phones) */
+@media (min-width: 576px) {
+/*     body {
+        background: royalblue;
+    }
+ */
+}
+
+/* Medium diveces ( tables, 768px e superior */
+@media (min-width: 767.98px) {
+   /*  body {
+        background-color: teal;
+    } */
+}
+
+/* large Diverces (Desktops, 992px e superior */
+@media (min-width: 922px) {
+  /*   body {
+        background-color: tomato;
+    } */
+}
+
+/* Extra large diverces ( large desltops, 1200px e superior */
+@media (min-width: 1200px) {
+   /*  body {
+        background-color:  lightslategray;
+    } */
+}
+
+/* **************************************************** */
+
+/* Estra small diveces (ortraint phones) */
+@media (max-width: 575.98px) {
+    body {
+        background: rgb(107, 5, 5);
+     }
+}
+
+
+/*  Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) { 
+    body {
+        background: royalblue;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        background-color: teal;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        background-color: tomato;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+        background-color:  lightslategray;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-color:  violet;
+    }
+}

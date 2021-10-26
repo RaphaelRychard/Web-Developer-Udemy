@@ -16,7 +16,73 @@
 
     <body style="margin-bottom: 200px;padding: 16px;">
 
-        
+        <main>
+            <form action="" class="bg-dark p-5 text-white">
+
+                <!-- Caixa de Texto -->
+                <section class="form-group">
+                    <label for="usuario">Usuário</label>
+                    <input class="form-control" type="text" name="user" id="usuario">
+                </section>
+
+                <section class="form-group">
+                    <label for="email">E-mail</label>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="Digite Seu e-mail" readonly>
+                    <small class="form-text">E-mail sera validado</small>
+                </section>
+
+                <!-- Select -->
+                <section>
+                    <label for="estados">Estados</label>
+                    <select name="estados" id="estados">
+                        <option value="Acre">Acre</option>
+                        <option value="Alagoas">Alagoas</option>
+                        <option value="Amapá">Amapá</option>
+                        <option value="...">...</option>
+                    </select>
+                </section>
+
+                <!-- text area -->
+                <section>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" cols="0" rows="3"></textarea>
+                </section>
+                
+                <!-- file input -->
+                <section>
+                    <label for="arquivo">arquivo</label>
+                    <input type="file" name="arquivo" id="arquivo">
+                </section>
+                <br>
+                <br>
+
+                <!-- Custom file input -->
+                <section>
+                    <input type="file" name="arquivo" id="arquivo">
+                    <label for="">Selecione arquivos</label>
+                </section>
+
+                <br>
+                <br>
+                
+                <!-- range -->
+                <section>
+                    <label for="range">Satisfação</label>
+                    <input type="range" name="range" id="range">
+                </section>
+
+                <!-- buttom -->
+                <input type="submit" value="Salvar">
+
+            </form>
+
+            <!-- Formulairo Inline -->
+            <form action="">
+                <input type="text" name="" id="" placeholder="Digite seu usuário">
+                <input type="password" name="" id="" placeholder="Digite Sua senha">
+
+            </form>
+        </main>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
